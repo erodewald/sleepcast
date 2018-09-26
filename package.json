@@ -1,0 +1,17 @@
+{
+    "name": "sleepcast",
+    "version": "0.0.1",
+    "author": {
+        "name": "Eric Rodewald",
+        "email": "eric.rodewald@smartthings.com"
+    },
+    "description": "A SmartThings webhook SmartApp for syncing your consciousness with your Vizio SmartCast TV",
+    "license": "gnu-gpl",
+    "dependencies": {
+        "axios": "^0.18.0",
+        "body-parser": "^1.18.3",
+        "dotenv": "^6.0.0",
+        "express": "^4.16.3",
+        "vizio-smart-cast": "^1.2.1"
+    }
+}
