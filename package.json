@@ -15,6 +15,6 @@
         "body-parser": "^1.18.3",
         "dotenv": "^6.0.0",
         "express": "^4.16.3",
-        "vizio-smart-cast": "git+https://github.com/erodewald/vizio-smart-cast.git"
+        "vizio-smart-cast": "git+https://github.com/erodewald/vizio-smart-cast.git#workaround"
     }
 }
