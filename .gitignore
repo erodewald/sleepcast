@@ -9,8 +9,6 @@ node_modules
 # macOS
 .DS_Store
 
-# CloudFirestore credentials file
-googleservices-*.json
-
-# Firebase configuration file
+# Firebase
 firebase-sleepcast.json
+sleepcast-219202-*.json

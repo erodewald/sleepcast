@@ -1,5 +1,7 @@
 # sleepcast
 
+[![CircleCI](https://circleci.com/gh/erodewald/sleepcast/tree/master.svg?style=svg)](https://circleci.com/gh/erodewald/sleepcast/tree/master)
+
 A SmartThings webhook automation that allows you to control your (modern) Vizio TV with your SmartThings switches or mode changes. A major goal is to develop a wearables companion app that can perform these functions at optimum times based on your heart rate and sleep status.
 
 ## Project goals
