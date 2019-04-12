@@ -1,0 +1,46 @@
+extends layout.pug
+
+block content
+    section.hero.is-primary.is-fullheight-with-navbar.is-hero-image
+        .hero-head
+        
+        .hero-body
+            .container.has-text-centered
+                h1.title.is-1.logo= title
+                p.subtitle.is-6
+                    em A flexible sleep-aide SmartThings automation for Vizio Smartcast TVs
+                .content.buttons.is-centered
+                    a.button.is-large(href="https://github.com/erodewald/sleepcast")
+                        span.icon
+                            i.fab.fa-github-alt
+                        span Github
+                    a.button.is-large.is-primary
+                        span.icon
+                            i.fas.fa-arrow-circle-down
+                        span Install
+                .container.has-text-centered
+                    //- a(href="https://www.prnewswire.com/news-releases/mans-new-best-friend-tv-is-a-constant-companion-for-us-consumers-268504842.html")
+                    //-     span Over 60% of Americans fall asleep with the TV on.
+                    br
+                    br
+                    p.subtitle.is-4
+                        | Falling asleep with the TV on can rob you of your sleep. Sleepcast can 
+                        | help improve your sleep by fading out volume and brightness, triggered by a wide range of
+                        | SmartThings triggers. 
+                    br
+                    br
+                    .container
+                        .columns
+                            .column
+                                p.title.is-4 Flexible Triggers
+                                p.subtitle Trigger off of any SmartThings device with intelligent conditions or link a Samsung Wearable for sleep state
+                            .column
+                                p.title.is-4 Super Configurable
+                                p.subtitle Fade volume and brightness gently over time to allow your eyesight and brain to adjust naturally 
+                            .column
+                                p.title.is-4 Analyze Data Patterns
+                                p.subtitle Link from SmartThings to Sleepcast.io to see your event dashboard
+                        
+        .hero-foot.has-text-centered
+            a(href="https://bulma.io")
+                img(src="https://bulma.io/images/made-with-bulma--semiwhite.png" alt="Made with Bulma" width="128" height="24")

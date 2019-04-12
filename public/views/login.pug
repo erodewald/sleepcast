@@ -1,0 +1,17 @@
+//- login.pug
+extends layout.pug
+
+append scripts
+    script(src="https://cdn.firebase.com/libs/firebaseui/3.4.1/firebaseui.js")
+    link(type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.4.1/firebaseui.css")
+    script(src="/js/firebase-auth.js")
+
+block content
+    section.hero.is-primary.is-fullheight-with-navbar.is-hero-image
+        .hero-head
+
+        .hero-body
+            .container.has-text-centered
+                div(id="firebaseui-auth-container")
+
+        .hero-foot

@@ -1,7 +1,16 @@
+# node dependencies
 node_modules
 
+# dotenv files
 .env
 .env.*
 !.env.example
 
+# macOS
 .DS_Store
+
+# CloudFirestore credentials file
+googleservices-*.json
+
+# Firebase configuration file
+firebase-sleepcast.json

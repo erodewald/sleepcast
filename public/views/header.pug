@@ -1,0 +1,44 @@
+//- header.pug
+nav.navbar.is-fixed-top.is-white
+            .container
+                .navbar-brand
+                    a.navbar-item(href="/")
+                        p.is-size-4 Sleepcast
+                    span.navbar-burger.burger(data-target="navbarHero")
+                        span
+                        span
+                        span
+                .navbar-menu(id="navbarHero")
+                    .navbar-start
+                        a.navbar-item(href="/how") How's it work?
+                        .navbar-item.has-dropdown.is-hoverable
+                            a.navbar-link(href="/documentation/overview") Docs
+                            .navbar-dropdown.is-boxed
+                                a.navbar-item.is-active(href="#") Start
+                                a.navbar-item(href="#") How to install
+                                a.navbar-item(href="#") Development guide
+                                a.navbar-item(href="#") Deployment
+                    .navbar-end
+                        .navbar-item
+                            .field.is-grouped
+                                p.control
+                                    a.button.is-white(href="https://github.com/erodewald/sleepcast")
+                                        span.icon.is-large.is-white
+                                            i.fab.fa-github-alt.fa-w-15.fa-lg
+                                    a.button.is-white(href="https://twitter.com/gen3ric")
+                                        span.icon.is-large.is-white(style="color: #55acee;")
+                                            i.fab.fa-twitter.fa-w-16.fa-lg
+                                    .dropdown.is-hoverable.is-right
+                                        .dropdown-trigger
+                                            a.control.button.is-success.is-rounded(href="/login")
+                                                    span.icon.is-large.is-white(id="account-photo-empty")
+                                                        i.fas.fa-user-circle
+                                                    figure.image.is-24x24(id="account-photo-container")
+                                                        img.is-rounded(id="account-photo-img")
+                                                    span.is-pulled-right(id="account-status") Log in
+                                        .dropdown-menu
+                                            .dropdown-content
+                                                span.dropdown-item(id="account-email")
+                                                a.dropdown-item(href="/login" id="log-in") Log in
+                                                a.dropdown-item(href="/logout" id="log-out") Log out
+                                                    

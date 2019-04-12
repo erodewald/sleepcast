@@ -1,0 +1,19 @@
+//- layout.pug
+html(lang="en")
+    head
+    block scripts
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title= title
+        link(rel="stylesheet", href="/css/style.css")
+        script(src="/js/background-modifier.js")
+        script(src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js")
+        script(src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" defer)
+        script(src="/js/initialize-firebase.js")
+        script(src="/js/track-firebase-state.js")
+
+    body.has-navbar-fixed-top
+        include header.pug
+        block content
+        block foot

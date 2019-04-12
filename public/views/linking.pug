@@ -1,0 +1,20 @@
+//- linking.pug
+
+extends layout.pug
+
+append scripts
+    script(src="https://cdn.firebase.com/libs/firebaseui/3.4.1/firebaseui.js")
+    link(type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.4.1/firebaseui.css")
+    script(src="/js/firebase-redirect.js")
+
+block content
+    section.hero.is-primary.is-fullheight-with-navbar.is-hero-image
+        .hero-head
+
+        .hero-body
+            .container.has-text-centered
+                h1.title.is-1.logo Linking with SmartThings...
+                p.subtitle.is-6
+                    em Please wait
+
+        .hero-foot

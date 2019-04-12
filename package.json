@@ -1,20 +1,53 @@
 {
-    "name": "sleepcast",
-    "version": "0.0.1",
-    "author": {
-        "name": "Eric Rodewald",
-        "email": "eric.rodewald@smartthings.com"
-    },
-    "scripts": {
-        "start": "node main.js"
-    },
-    "description": "A SmartThings webhook SmartApp for syncing your consciousness with your Vizio SmartCast TV",
-    "license": "gnu-gpl",
-    "dependencies": {
-        "axios": "^0.18.0",
-        "body-parser": "^1.18.3",
-        "dotenv": "^6.0.0",
-        "express": "^4.16.3",
-        "vizio-smart-cast": "git+https://github.com/erodewald/vizio-smart-cast.git#workaround"
+  "name": "sleepcast",
+  "version": "0.0.1",
+  "author": "Eric Rodewald <eric.rode@gmail.com>",
+  "scripts": {
+    "watch": "nodemon",
+    "dev": "node --inspect-brk=9229 main.js",
+    "start": "node main.js",
+    "build-css": "node-sass --include-path sass sass/style.scss public/css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "description": "A SmartThings webhook SmartApp for syncing your consciousness with your Vizio SmartCast TV",
+  "license": "MIT",
+  "repository": "erodewald/sleepcast",
+  "engines": {
+    "node": "11.x"
+  },
+  "dependencies": {
+    "@smartthings/smartapp": "file:/Users/ericrodewald/repos/smartapp-sdk-nodejs",
+    "atob": "^2.1.2",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "bulma": "~0.7.4",
+    "cookie-parser": "^1.4.4",
+    "dotenv": "^6.2.0",
+    "express": "~4.16.4",
+    "firebase": "5.8.6",
+    "firebase-admin": "7.0.0",
+    "firebaseui": "~3.5.2",
+    "moment": "~2.24.0",
+    "pug": "~2.0.3",
+    "query-string": "~6.3.0",
+    "require-all": "~3.0.0",
+    "vizio-smart-cast": "git+https://github.com/erodewald/vizio-smart-cast.git#workaround",
+    "voca": "^1.4.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.10",
+    "xo": "^0.24.0"
+  },
+  "xo": {
+    "ignore": [
+      "node_modules/**/*",
+      ".git/**/*"
+    ],
+    "semicolon": false,
+    "space": 2,
+    "rules": {
+      "promise/prefer-await-to-then": 0
     }
+  }
 }

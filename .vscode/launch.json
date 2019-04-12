@@ -8,7 +8,16 @@
             "type": "node",
             "request": "launch",
             "name": "Debug",
-            "program": "${workspaceFolder}/main.js"
+            "program": "${workspaceFolder}/main.js",
+            "runtimeArgs": [
+                "--preserve-symlinks"
+              ]
+        }, 
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "Attach",
+            "port": 9229
         }
     ]
 }
